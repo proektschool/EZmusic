@@ -1,0 +1,210 @@
+@import url('https://fonts.google.com/specimen/Roboto+Slab?lang=ru_Cyrl');
+body.index-page {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Видеофон */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Видео на заднем плане */
+  overflow: hidden;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; /* Видео заполняет весь экран */
+}
+
+/* Затемнение для видео */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный чёрный слой */
+  z-index: 1; /* Слой над видео */
+}
+
+/* Остальные стили */
+header {
+  background: transparent; /* Прозрачный фон */
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative; /* Чтобы текст был выше затемнения */
+  z-index: 2; /* Поднимаем текст над видео и затемнением */
+}
+
+header h1 {
+  font-family: 'Roboto Slab', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: 'Roboto Slab', cursive;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  position: relative; /* Чтобы навигация была выше затемнения */
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/* Главный контент */
+#main-content {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative; /* Чтобы контент был выше фона */
+  z-index: 2; /* Поднимаем контент над видео и затемнением */
+}
+
+#main-content h2 {
+  font-family: 'Roboto Slab', cursive;
+  font-size: 2.5rem;
+  color: #000000ee;
+  margin-bottom: 20px;
+}
+
+#main-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+/* Нажимные кнопки */
+#cta-button {
+  background: #479706;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto Slab', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* Карточки с уроками */
+
+#features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Roboto Slab', cursive;
+  font-size: 2.5rem;
+  color: #4fb80ad7;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-family: 'Roboto Slab', cursive;
+  font-size: 1.8rem;
+  color: #479706;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+/* Подвал */
+footer {
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-family: 'Roboto Slab', sans-serif;
+  position: relative; /* Чтобы подвал был выше фона */
+  z-index: 1; /* Поднимаем подвал над фоном */
+}
+.action-button {
+  background: #38b905e7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.action-button:hover {
+  background: #006115;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

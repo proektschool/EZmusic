@@ -1,0 +1,173 @@
+/* Стили для страницы "Аккорды для гитары" */
+body.akkordy-dlya-gitary-page {
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Белый текст для контраста с тёмным фоном */
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  overflow: auto;
+}
+
+/* Видеофон */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Видео на заднем плане */
+  overflow: hidden;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; /* Видео заполняет весь экран */
+}
+
+/* Затемнение для видео */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.39); /* Более тёмный слой для контраста */
+  z-index: 1; /* Слой над видео */
+}
+
+/* Остальные стили */
+header {
+  background: transparent; /* Прозрачный фон */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative; /* Чтобы текст был выше затемнения */
+  z-index: 2; /* Поднимаем текст над видео и затемнением */
+}
+
+header h1 {
+  font-family: 'Roboto Slab', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: 'Roboto Slab', cursive;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  position: relative; /* Чтобы навигация была выше затемнения */
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #f79031;
+}
+
+/* Главный контент */
+#lesson-content {
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.356); /* Тёмный полупрозрачный фон */
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative; /* Чтобы контент был выше фона */
+  z-index: 2; /* Поднимаем контент над видео и затемнением */
+}
+
+/* Список аккордов */
+.guitar-chords-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.guitar-chords-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для пунктов списка */
+  border-radius: 5px;
+}
+
+.guitar-chords-list li strong {
+  color: #e94614; /* Акцентный цвет для названий аккордов */
+}
+
+/* Изображения аккордов */
+
+
+.chord-image {
+  background: rgba(255, 255, 255, 0); /* Полупрозрачный фон для изображений */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Кнопка "Вернуться к урокам" */
+.back-button {
+  background: #522f01;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background: #b37503;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Подвал */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-family: 'Roboto Slab', sans-serif;
+  position: relative; /* Чтобы подвал был выше фона */
+  z-index: 2; /* Поднимаем подвал над видео и затемнением */
+}

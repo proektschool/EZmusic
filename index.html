@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZMusic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="index-page"> <!-- Добавлен класс index-page -->
+    <!-- Видеофон -->
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/videoplayback (4).mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-overlay"></div> <!-- Затемнение для видео -->
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>EZ Music - Музыка для всех</h1>
+            <p>Наш слоган: Музыка для всех!
+                Учись музыкальной теории/основе на нашем сайте
+            </p>
+        </div>
+    </header>
+
+    <section id="main-content">
+        <h2>О нас</h2>
+        <p>Этот сайт создан учеником 9 класса 23 школы Екатеринбурга Даниловым Дмитрием для того, чтобы получить опыт в создании сайтов, найти единомышленников и дать людям полезные советы.
+            Сайтом может пользоваться кто угодно и когда захочет тк он подключен к домену (информация про это есть в проектной работе на тему создания этого сайта)
+        </p>
+        <button id="cta-button">Начать обучение!</button>
+    </section>
+
+    <section id="features">
+        <h2>Что мы предлагаем?</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Уроки</h3>
+                <p>Пошаговые уроки для начинающих.</p>
+                <a href="lessons.html" class="action-button">Перейти к урокам</a>
+            </div>
+            <div class="card">
+                <h3>Форум</h3>
+                <p>Для общения с другими музыкантами (В РАЗРАБОТКЕ).</p>
+                <a class="action-button">В РАЗРАБОТКЕ</a>
+            </div>
+            <div class="card">
+                <h3>Контакты</h3>
+                <p>Контакты креетора (мне можете написать).</p>
+                <a href="contact.html" class="action-button">Перейти к контактам</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EazyMusic</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

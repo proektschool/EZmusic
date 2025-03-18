@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уроки для начинающих музыкантов</title>
+    <link rel="stylesheet" href="stylesuroki.css">
+    <link href="https://fonts.google.com/specimen/Roboto+Slab?lang=ru_Cyrl" rel="stylesheet">
+</head>
+<body class="lessons-page"> <!-- Добавлен класс lessons-page -->
+    <!-- Видеофон -->
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/Untitled Project.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-overlay"></div> <!-- Затемнение для видео -->
+    </div>
+    <header>
+        <div class="header-content">
+            <h1>Уроки для начинающих музыкантов</h1>
+            <p>Изучай основы музыки шаг за шагом!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="forum.html">Форум (В РАЗРАБОТКЕ)</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="lessons-content">
+        <h2>Темы уроков</h2>
+        <div class="lesson-cards">
+            <!-- Урок 1: Нотная грамота -->
+            <div class="card">
+                <h3>Нотная грамота</h3>
+                <p>Изучите основы нотной записи, длительности нот и ключи.</p>
+                <a href="notnaya-gramota.html" class="lesson-button">Подробнее</a>
+            </div>
+
+            <!-- Урок 2: Аккорды для гитары -->
+            <div class="card">
+                <h3>Аккорды для гитары</h3>
+                <p>Научитесь играть основные аккорды и их последовательности.</p>
+                <a href="akkordy-dlya-gitary.html" class="lesson-button">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EazyMusic </p>
+    </footer>
+</body>
+</html>

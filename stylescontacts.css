@@ -1,0 +1,180 @@
+/* Стили для страницы "Контакты" */
+body.contact-page {
+  margin: 0;
+  padding: 0;
+  color: #b91c1c; /* Тёмный текст для контраста с фоном */
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  overflow: auto; /* Разрешаем прокрутку */
+  font-family: 'Roboto Slab', sans-serif;
+}
+header {
+  background: rgba(7, 134, 18, 0.877); /* Полупрозрачный белый фон */
+  color: #000000;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Roboto Slab', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: 'Roboto Slab', cursive;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0);
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #000000;
+}
+
+/* Главный контент */
+#contact-content {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0); /* Полупрозрачный белый фон */
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+#contact-content h2 {
+  font-family: 'Roboto Slab', cursive;
+  font-size: 2.5rem;
+  color: #000000; /* Акцентный цвет */
+  margin-bottom: 20px;
+}
+
+/* Форма обратной связи */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #00000000;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #33d413;
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+  outline: none;
+}
+
+/* Особенная стилизация для текстового поля */
+.form-group textarea {
+  resize: vertical; /* Разрешаем вертикальное изменение размера */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+  border: 2px solid #000000;
+  border-radius: 15px;
+  padding: 15px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-group textarea:hover {
+  border-color: #23cc14;
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.5);
+}
+
+/* Кнопка отправки */
+.submit-button {
+  background: #000000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto Slab', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto 0;
+}
+
+.submit-button:hover {
+  background: #42c011;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Подвал */
+footer {
+  background: rgba(0, 0, 0, 0);
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-family: 'Roboto Slab', sans-serif;
+  position: relative;
+  z-index: 2;
+}
